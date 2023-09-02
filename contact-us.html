@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact-us.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Brand Name</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Form start -->
+    <div class="container">
+        <form class="row g-3 needs-validation main-form" action="https://formspree.io/f/mgejyaqa"
+        method="POST" novalidate>
+            <div class="col-md-12 ">
+                <label for="validationCustom01" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Enter your Name"
+                autocomplete="off" name="name"
+                    required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Contact Number</label>
+                <input type="number" class="form-control" id="validationCustom01" value=""
+                    placeholder="Enter your contact number" autocomplete="off" name="phone" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Email ID</label>
+                <div class="input-group has-validation">
+
+                    <input type="email" class="form-control" id="validationCustomUsername" placeholder="Enter Email ID"
+                        aria-describedby="inputGroupPrepend" autocomplete="off" name="email" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" placeholder="Enter your city" id="validationCustom03" autocomplete="off" name="city" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-7">
+                <label for="validationCustom04" class="form-label">Services</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="form-floating col-md-12">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px" name="message"></textarea>
+                <label for="floatingTextarea2">Message</label>
+            </div>
+            <div class="col-10 ">
+                <button class="btn bg-primary-subtle" type="submit">Submit Details</button>
+            </div>
+        </form>
+    </div>
+    <!-- Form end -->
+
+    <div class="map">
+        <h2>Find us on map</h2>
+        <div class="iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.499412190934!2d72.9064307738364!3d19.085734751669495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c750e3f91cc7%3A0x56f756d2a4e73156!2sGhatkopar%20railway%20station!5e0!3m2!1sen!2sin!4v1693473581081!5m2!1sen!2sin"
+                width="900" height="330" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
